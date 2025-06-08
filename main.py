@@ -27,9 +27,9 @@ with open("config.json", "r") as f:
 def getenv(var):
     return environ.get(var) or DATA.get(var, None)
 
-bot_token = getenv("TOKEN")
-api_hash = getenv("HASH")
-api_id = getenv("ID")
+bot_token = getenv("7713211393:AAEUh5lug3dizn85fhjLGV9b3a4UVr8exi8")
+api_hash = getenv("644e1d9e8028a5295d6979bb3a36b23b")
+api_id = getenv("23200475")
 app = Client("my_bot", api_id=api_id, api_hash=api_hash, bot_token=bot_token)
 with app:
     app.set_bot_commands(
